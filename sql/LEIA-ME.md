@@ -1,43 +1,50 @@
-# sql/
+```python
+def calcular_imc(peso, altura):
+    imc = peso / (altura ** 2)
+    return imc
 
-Esta pasta é **opcional** — usa-a se o teu projeto utilizar SQL externo ao código Python.
 
-## Quando usar esta pasta
+def classificar_imc(imc):
+    if imc < 18.5:
+        return "Abaixo do peso"
+    elif imc < 25:
+        return "Peso normal"
+    elif imc < 30:
+        return "Sobrepeso"
+    else:
+        return "Obesidade"
 
-- Se criares o esquema da base de dados com um script `.sql` separado
-- Se quiseres guardar queries complexas fora do código Python
-- Se tiveres dados de exemplo para popular a base de dados em testes
 
-## Ficheiros sugeridos
+def recomendar_suplemento(imc, objetivo):
+    if objetivo == "1":
+        if imc < 18.5:
+            return """
+Hipercalórico
+Whey Concentrado
+Creatina
+"""
+        elif imc < 25:
+            return """
+Whey Concentrado
+Creatina
+"""
+        else:
+            return """
+Whey Concentrado
+Creatina
+"""
 
-| Ficheiro              | Descrição                                              |
-|-----------------------|--------------------------------------------------------|
-| `criar_tabelas.sql`   | DDL — instruções `CREATE TABLE` para criar o esquema   |
-| `dados_exemplo.sql`   | Dados iniciais de teste (`INSERT INTO ...`)            |
+    elif objetivo == "2":
+        return """
+Whey Isolado
+Creatina
+"""
 
-## Exemplo de `criar_tabelas.sql`
+    elif objetivo == "3":
+        return """
+Whey Concentrado
+"""
 
-```sql
--- Criar tabela de utilizadores
-CREATE TABLE IF NOT EXISTS utilizadores (
-    id        INTEGER PRIMARY KEY AUTOINCREMENT,
-    nome      TEXT    NOT NULL,
-    email     TEXT    NOT NULL UNIQUE,
-    password  TEXT    NOT NULL,
-    criado_em DATETIME DEFAULT CURRENT_TIMESTAMP
-);
-
--- Criar tabela de produtos
-CREATE TABLE IF NOT EXISTS produtos (
-    id        INTEGER PRIMARY KEY AUTOINCREMENT,
-    nome      TEXT    NOT NULL,
-    preco     REAL    NOT NULL CHECK (preco >= 0),
-    stock     INTEGER NOT NULL DEFAULT 0,
-    criado_em DATETIME DEFAULT CURRENT_TIMESTAMP
-);
+    else:
+        return "Objetivo inválido."
 ```
-
-## Nota
-
-Se usas SQLite com Python e crias as tabelas diretamente no DAL (`CREATE TABLE IF NOT EXISTS`),
-esta pasta pode ficar vazia ou ser omitida. Nesse caso, remove este ficheiro e a pasta.
