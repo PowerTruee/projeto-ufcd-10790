@@ -1,0 +1,31 @@
+# Requisitos do Projeto
+
+## Requisitos Funcionais
+
+| Código | Descrição                                                                  |
+| ------ | -------------------------------------------------------------------------- |
+| RF01   | O sistema deve permitir inserir o nome do utilizador                       |
+| RF02   | O sistema deve permitir inserir a idade                                    |
+| RF03   | O sistema deve permitir inserir o sexo                                     |
+| RF04   | O sistema deve permitir inserir o peso                                     |
+| RF05   | O sistema deve permitir inserir a altura                                   |
+| RF06   | O sistema deve calcular automaticamente o IMC                              |
+| RF07   | O sistema deve classificar o IMC                                           |
+| RF08   | O sistema deve permitir selecionar um objetivo                             |
+| RF09   | O sistema deve recomendar suplementação                                    |
+| RF10   | O sistema deve apresentar um relatório final                               |
+| RF11   | O sistema deve guardar o histórico de consultas                            |
+| RF12   | O sistema deve permitir realizar novas consultas sem reiniciar a aplicação |
+
+## Requisitos Não Funcionais
+
+| Código | Descrição                                           |
+| ------ | --------------------------------------------------- |
+| RNF01  | A aplicação deve ser desenvolvida em Python 3       |
+| RNF02  | A aplicação deve executar em ambiente Windows       |
+| RNF03  | A aplicação deve funcionar em consola               |
+| RNF04  | O tempo de resposta deve ser inferior a 2 segundos  |
+| RNF05  | O código deve ser modular e organizado em funções   |
+| RNF06  | O código deve ser mantido num repositório GitHub    |
+| RNF07  | O sistema deve possuir validação básica dos dados   |
+| RNF08  | A aplicação deve permitir manutenção futura simples |

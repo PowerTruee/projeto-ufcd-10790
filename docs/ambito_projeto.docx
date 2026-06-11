@@ -1,0 +1,36 @@
+# Âmbito do Projeto
+
+## Introdução
+
+O presente projeto consiste no desenvolvimento de uma aplicação em Python denominada NutriFit Advisor. A aplicação tem como finalidade calcular o Índice de Massa Corporal (IMC) do utilizador e fornecer recomendações básicas de suplementação de acordo com o seu perfil físico e objetivo pessoal.
+
+Atualmente, muitas pessoas iniciam atividades físicas ou programas de treino sem possuir conhecimentos suficientes sobre o seu estado físico ou sobre quais suplementos são mais adequados às suas necessidades. Como consequência, acabam por escolher produtos inadequados ou investir em suplementos que não contribuem para os seus objetivos.
+
+Para colmatar esta lacuna, o sistema recolhe informações como nome, idade, sexo, peso, altura e objetivo do utilizador. Com base nesses dados, calcula o IMC, classifica o estado físico e apresenta sugestões de suplementação adequadas.
+
+A aplicação pretende demonstrar a utilização prática da programação para resolver um problema real, através de uma interface simples e intuitiva desenvolvida em Python.
+
+## Objetivos
+
+* Calcular automaticamente o IMC do utilizador.
+* Classificar o estado físico com base no IMC.
+* Permitir a definição de objetivos físicos.
+* Recomendar suplementação adequada ao perfil do utilizador.
+* Apresentar um relatório final organizado.
+
+## Funcionalidades
+
+* Inserção de dados pessoais.
+* Cálculo automático do IMC.
+* Classificação do IMC.
+* Seleção de objetivo.
+* Recomendação de suplementação.
+* Geração de relatório.
+* Armazenamento do histórico de consultas.
+
+## Restrições
+
+* A aplicação funciona apenas em ambiente de consola.
+* As recomendações são baseadas em regras pré-definidas.
+* Não substitui aconselhamento médico ou nutricional.
+* Não utiliza base de dados nem ligação à Internet.
